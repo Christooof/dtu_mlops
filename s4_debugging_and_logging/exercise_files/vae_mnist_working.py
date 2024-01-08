@@ -10,6 +10,10 @@ from torch.utils.data import DataLoader
 from torchvision.datasets import MNIST
 from torchvision.utils import save_image
 
+import wandb
+wandb.init(project="tryout_mnist_set")
+
+
 # Model Hyperparameters
 dataset_path = "datasets"
 cuda = torch.cuda.is_available()
@@ -19,7 +23,7 @@ x_dim = 784
 hidden_dim = 400
 latent_dim = 20
 lr = 1e-3
-epochs = 5
+epochs = 1
 
 
 # Data loading
@@ -136,6 +140,8 @@ for epoch in range(epochs):
 
         loss.backward()
         optimizer.step()
+
+
     print(
         "\tEpoch",
         epoch + 1,
@@ -143,6 +149,8 @@ for epoch in range(epochs):
         "\tAverage Loss: ",
         overall_loss / (batch_idx * batch_size),
     )
+    # Log metrics to wandb during training
+    wandb.log({"loss": overall_loss / (batch_idx * batch_size)})
 print("Finish!!")
 
 # Generate reconstructions
