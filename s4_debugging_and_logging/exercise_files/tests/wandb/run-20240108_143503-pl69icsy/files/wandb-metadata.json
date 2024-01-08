@@ -1,0 +1,45 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.5",
+    "heartbeatAt": "2024-01-08T13:35:04.953447",
+    "startedAt": "2024-01-08T13:35:03.863555",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\chris\\OneDrive - Danmarks Tekniske Universitet\\DTU\\Semester 3\\Machine Learning Operations\\dtu_mlops\\s4_debugging_and_logging\\exercise_files\\tests\\test_model.py",
+    "codePathLocal": "test_model.py",
+    "codePath": "s4_debugging_and_logging\\exercise_files\\tests\\test_model.py",
+    "git": {
+        "remote": "https://github.com/Christooof/dtu_mlops.git",
+        "commit": "e1666c28c39f3d0f48dcf82bb3610b09e125b4ab"
+    },
+    "email": "christof.haye@gmail.com",
+    "root": "C:/Users/chris/OneDrive - Danmarks Tekniske Universitet/DTU/Semester 3/Machine Learning Operations/dtu_mlops",
+    "host": "LAPTOP-9O0UDD7Q",
+    "username": "chris",
+    "executable": "C:\\Users\\chris\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1792.0,
+        "min": 0.0,
+        "max": 1992.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1792.0,
+            "min": 0.0,
+            "max": 1992.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 237.22753524780273,
+            "used": 230.47724151611328
+        }
+    },
+    "memory": {
+        "total": 7.853755950927734
+    }
+}
